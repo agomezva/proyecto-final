@@ -32,7 +32,7 @@ public class CitaService {
 
     public Optional<List<Cita>> findByIdArquitecto(Integer idArquitecto){
 
-        return citaRepository.findByIdArquitecto(idArquitecto);
+        return citaRepository.findByIdUsuario(idArquitecto);
     }
 
     public List<Cita> getByDate(LocalDate fecha) {

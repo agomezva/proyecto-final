@@ -19,8 +19,8 @@ public class Cotizacion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idCotizacion;
 
-    @Column(name = "id_arquitecto")
-    private Integer idArquitecto;
+    @Column(name = "id_usuario")
+    private Integer idUsuario;
 
     @Column(name = "id_cliente")
     private Integer idCliente;
@@ -31,8 +31,8 @@ public class Cotizacion {
     private Double precioTotal;
 
     @ManyToOne
-    @JoinColumn(name = "id_arquitecto",insertable = false,updatable = false)
-    private Arquitecto arquitecto;
+    @JoinColumn(name = "id_usuario",insertable = false,updatable = false)
+    private Usuario usuario;
 
     @ManyToOne
     @JoinColumn(name = "id_cliente",insertable = false,updatable = false)

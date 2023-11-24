@@ -31,7 +31,7 @@ public class CitaController {
         if (citaExiste.isPresent()){
             Cita citaAmodificar = citaExiste.get();
             citaAmodificar.setIdCita(cita.getIdCita());
-            citaAmodificar.setIdArquitecto(cita.getIdArquitecto());
+            citaAmodificar.setIdUsuario(cita.getIdUsuario());
             citaAmodificar.setIdCliente(cita.getIdCliente());
             citaAmodificar.setFechaCita(cita.getFechaCita());
             citaAmodificar.setHoraInicio(cita.getHoraInicio());
